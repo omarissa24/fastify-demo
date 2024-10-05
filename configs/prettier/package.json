@@ -1,0 +1,10 @@
+{
+  "name": "@fastify-demo/prettier",
+  "version": "0.0.0",
+  "private": true,
+  "main": ".prettierrc.json",
+  "dependencies": {
+    "@trivago/prettier-plugin-sort-imports": "*",
+    "prettier": "*"
+  }
+}
