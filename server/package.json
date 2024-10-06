@@ -25,14 +25,18 @@
   },
   "dependencies": {
     "@fastify/autoload": "^6.0.1",
+    "@fastify/swagger": "^9.1.0",
+    "@fastify/swagger-ui": "^5.0.1",
     "esbuild": "^0.24.0",
     "fastify": "^5.0.0",
     "fastify-cli": "^7.0.1",
-    "nodemon": "^3.1.7"
+    "nodemon": "^3.1.7",
+    "swagger-jsdoc": "^6.2.8"
   },
   "devDependencies": {
     "@fastify-demo/eslint-config": "*",
     "@fastify-demo/prettier": "*",
-    "@fastify-demo/tsconfig": "*"
+    "@fastify-demo/tsconfig": "*",
+    "@types/swagger-jsdoc": "^6.0.4"
   }
 }
