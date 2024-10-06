@@ -8,7 +8,7 @@ const app: FastifyInstance = Fastify({
   logger: true,
 });
 
-app.register(healthRouter);
+app.register(healthRouter, { prefix: "/api/v1" });
 
 app.listen({ port: 3000 }, function (err, address) {
   if (err) {
