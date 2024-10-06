@@ -13,7 +13,7 @@ const swaggerDefinition: SwaggerDefinition = {
   openapi: "3.0.0",
   info: {
     title: "Fastify starter",
-    version: "0.0.1",
+    version: "1.0.0",
     description: "Fastify API",
   },
   host: `0.0.0.0:${process.env.PORT ?? 3000}`,
