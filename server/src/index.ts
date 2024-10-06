@@ -1,14 +1,15 @@
 import Fastify, { FastifyInstance } from "fastify";
 
+// import swagger from "fastify-swagger";
+// import { swaggerOptions } from "./config/swagger";
+import { healthRouter } from "./routes";
+
 const app: FastifyInstance = Fastify({
   logger: true,
 });
 
-app.get("/", async () => {
-  return { hello: "world" };
-});
+app.register(healthRouter);
 
-// Run the server!
 app.listen({ port: 3000 }, function (err, address) {
   if (err) {
     app.log.error(err);

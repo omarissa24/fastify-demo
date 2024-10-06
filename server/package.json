@@ -30,8 +30,8 @@
     "nodemon": "^3.1.7"
   },
   "devDependencies": {
-    "@sphinx/eslint-config": "*",
-    "@sphinx/prettier": "*",
-    "@sphinx/tsconfig": "*"
+    "@fastify-demo/eslint-config": "*",
+    "@fastify-demo/prettier": "*",
+    "@fastify-demo/tsconfig": "*"
   }
 }
