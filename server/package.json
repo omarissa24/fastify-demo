@@ -5,8 +5,10 @@
   "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon dist/index.js",
-    "build": "tsc -p tsconfig.json"
+    "start": "npm run build && node dist",
+    "build": "rm -rf dist && esbuild `find src \\( -name '*.ts' \\)` --platform=node --outdir=dist --bundle",
+    "build:windows": "rm -rf dist && node esbuild.js",
+    "dev": "nodemon"
   },
   "keywords": [],
   "author": "",
@@ -22,6 +24,7 @@
     ]
   },
   "dependencies": {
+    "esbuild": "^0.24.0",
     "fastify": "^5.0.0",
     "fastify-cli": "^7.0.1",
     "nodemon": "^3.1.7"
