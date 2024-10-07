@@ -1,15 +1,10 @@
 import Fastify, { type FastifyInstance } from "fastify";
 
 import app from "./app";
-import { initSwagger } from "./swagger";
 
-const server: FastifyInstance = Fastify({
-  logger: true,
-});
+const server: FastifyInstance = Fastify({ logger: true });
 
 server.register(app);
-
-initSwagger(server);
 
 server.listen({ port: 3000 });
 
